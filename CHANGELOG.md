@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+### Added
+
+- Add an example of a sender and a receiver
+
 ### Changed
 
 - Make all repos run on Windows
