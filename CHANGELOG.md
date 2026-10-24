@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.1.1 - 2026-10-24
+
+### Added
+
+- Add an example of a sender and a receiver
+
+### Changed
+
+- Make all repos run on Windows
+
 ## 0.1.0 - 2026-10-07
 
 ### Added
