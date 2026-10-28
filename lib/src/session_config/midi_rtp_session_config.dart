@@ -270,9 +270,9 @@ final class MidiRtpSessionConfig {
 
   /// Returns whether a controller of [channel] uses the enhanced Chapter C
   /// encoding, which sets the H bit of its channel journal.
-  bool usesEnhancedChapterC(int channel) => [
-    for (var controller = 0; controller < 128; controller++) controller,
-  ].any((controller) => isEnhanced(channel, controller));
+  bool usesEnhancedChapterC(int channel) =>
+      [for (var controller = 0; controller < 128; controller++) controller]
+          .any((controller) => isEnhanced(channel, controller));
 
   /// Returns a copy with the given fields replaced.
   MidiRtpSessionConfig copyWith({
