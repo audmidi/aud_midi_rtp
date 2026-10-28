@@ -89,9 +89,8 @@ void main() {
           const MidiRtpTimeCode(minutes: 1, rate: 3),
         );
         expect(
-          [
-            for (var rate = 0; rate < 4; rate++) MidiRtpTimeCode(rate: rate),
-          ].map((c) => c.framesPerSecond),
+          [for (var rate = 0; rate < 4; rate++) MidiRtpTimeCode(rate: rate)]
+              .map((c) => c.framesPerSecond),
           equals([24, 25, 30, 30]),
         );
       });

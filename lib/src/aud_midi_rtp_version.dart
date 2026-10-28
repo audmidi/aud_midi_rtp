@@ -9,4 +9,4 @@
 // coverage:ignore-file
 
 /// The version of the `aud_midi_rtp` package.
-const String audMidiRtpVersion = '0.1.1';
+const String audMidiRtpVersion = '0.2.0';

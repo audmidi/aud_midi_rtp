@@ -184,18 +184,8 @@ void main() {
 
       test('accepts every form of a delta time', () {
         expect(
-          read([
-            0x09,
-            0x90,
-            0x3C,
-            0x64,
-            0x80,
-            0x80,
-            0x80,
-            0x00,
-            0x3E,
-            0x5A,
-          ]).commands,
+          read([0x09, 0x90, 0x3C, 0x64, 0x80, 0x80, 0x80, 0x00, 0x3E, 0x5A])
+              .commands,
           equals([message(noteOn), message(noteOn2)]),
         );
       });
@@ -277,17 +267,9 @@ void main() {
 
       test('keeps running status across undefined real-time commands', () {
         expect(
-          read([
-            0x08,
-            0x90,
-            0x3C,
-            0x64,
-            0x00,
-            0xF9,
-            0x00,
-            0x3E,
-            0x5A,
-          ]).commands.last,
+          read([0x08, 0x90, 0x3C, 0x64, 0x00, 0xF9, 0x00, 0x3E, 0x5A])
+              .commands
+              .last,
           message(noteOn2),
         );
       });
